@@ -6,7 +6,7 @@
     justify-content: center;
     flex-direction: row;
 } */
-
+/* 
 .first {
     width: 100%;
     display: flex;
@@ -43,7 +43,42 @@
 .two h3 {
     font-weight: bold;
     margin-bottom: 10px;
+} */
+
+/* .first {
+    width: 90%;
+    display: flex;
+    align-items: stretch; 
+    justify-content: space-between; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+} */
+
+.first {
+    width: 85%;
+    display: flex;
+    align-items: stretch; /* Allow items to stretch to the same height if needed */
+    justify-content: space-between; /* Add space between the items */
+    gap: 20px; /* Maintain consistent gap between the elements */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    margin: 0 auto; /* Center the container horizontally */
 }
+
+.one, .two {
+    flex: 1 1 48%; /* Flex-grow, shrink, and base width (48% ensures two items per row with space between) */
+    border: 2px solid lightgray;
+    padding: 2%;
+    border-radius: 15px;
+    background: #eaeaea;
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #fff;
+    margin: 10px 0; /* Add margin for vertical spacing */
+}
+
+.one h3, .two h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 
 .connect {
     display: flex;
